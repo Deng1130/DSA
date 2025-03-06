@@ -23,7 +23,5 @@ public class Main {
         System.out.println("Check if the queue is full = " + num.isFull());
         System.out.println("Size = " + num.getSize());
 
-        System.out.println("deQueue Count: " + num.deQueue_count);
-        System.out.println("enQueue Count: " + num.enQueue_count);
     }
 }

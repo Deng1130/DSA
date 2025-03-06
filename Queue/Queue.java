@@ -3,11 +3,9 @@ public class Queue {
     int size;
     int front;
     int rear;
-    int enQueue_count;
-    int deQueue_count;
+
 
     public void enQueue(int data){
-        enQueue_count++;
         if(!isFull()){
             queue[rear] = data;
             rear = (rear + 1) % 5;
@@ -28,7 +26,6 @@ public class Queue {
     }
 
     public int deQueue(){
-        deQueue_count++;
         int data = queue[front];
         if(!isEmpty()){
             front = (front + 1) % 5;
